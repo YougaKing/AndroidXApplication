@@ -24,7 +24,17 @@
         android:text="tabbed"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bottomNavigation"
-       />
+        app:layout_constraintTop_toBottomOf="@id/bottomNavigation" />
+
+
+    <Button
+        android:id="@+id/loginDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="loginDialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabbed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

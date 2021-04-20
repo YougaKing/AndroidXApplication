@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.dailyyoga.androidxapplication.databinding.ActivityMainBinding;
+import com.dailyyoga.androidxapplication.ui.login.LoginFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,5 +30,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, TabbedActivity.class);
             startActivity(intent);
         });
+
+        mBinding.loginDialog.setOnClickListener(v -> new LoginFragment()
+                .show(getSupportFragmentManager(), LoginFragment.class.getSimpleName()));
     }
 }
