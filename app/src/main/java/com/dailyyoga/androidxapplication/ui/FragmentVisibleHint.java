@@ -19,4 +19,9 @@ public interface FragmentVisibleHint {
     default void onUserVisibleHintShow() {
         Log.e(STACK_TAG, String.format("%s onUserVisibleHintShow()", this.getClass().getSimpleName()));
     }
+
+    /** fragment创建后并且不可见 */
+    default void onUserVisibleHintHide() {
+        Log.e(STACK_TAG, String.format("%s onUserVisibleHintHide()", this.getClass().getSimpleName()));
+    }
 }

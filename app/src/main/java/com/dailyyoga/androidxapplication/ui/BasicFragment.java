@@ -55,6 +55,13 @@ public class BasicFragment extends Fragment implements FragmentVisibleHint {
     }
 
     @Override
+    public void onPause() {
+        super.onPause();
+        if (mFirst) return;
+        onUserVisibleHintHide();
+    }
+
+    @Override
     public void onStop() {
         super.onStop();
         Log.w(TAG, this.getClass().getSimpleName() + "-onStop()");
